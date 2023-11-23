@@ -1,0 +1,135 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+#container h1 {
+    font-family: 'Vina Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 650;
+    margin-top: 70px;
+    padding: 0 25px;
+}
+
+#container h1 span {
+    color: #FB41DA;
+    margin: 0;
+}
+.row-container {
+    width: 90%;
+    height: 15rem;
+    display: flex; 
+    border: rgb(163, 162, 162) 3px solid;
+    border-radius: 30px;
+    border-left: none;
+    border-right: none;
+    padding: 20px 20px;
+    margin: 15px 0;
+}
+
+.description {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding: 0 10px;
+    flex-shrink: 0;
+}
+
+.description p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.description span  {
+    font-size: auto;
+}
+
+.gif{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.gif img {
+    width: 65%;
+    border-radius: 20px;
+}
+h4 {
+    font-size: 40px;
+}
+
+#informations {
+    width: 95%;
+}
+
+#informations-top {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin span {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 10px;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+.admin img {
+    width: 150px;
+    border-radius: 100%;
+    -webkit-box-shadow: 8px 8px 31px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 31px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 31px 0px rgba(66, 68, 90, 1);
+}
+
+#footer {
+    margin-top: 120px;
+    height: 3rem;
+    background-color: #bb1e9e;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0px -11px 16px 7px rgba(193, 132, 195, 1);
+    -moz-box-shadow: 0px -11px 16px 7px rgba(193, 132, 195, 1);
+    box-shadow: 0px -11px 16px 7px rgba(193, 132, 195, 1);
+}
+/*
+#footer::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -30px;
+    border-bottom: black 2px solid;
+    position: absolute;
+    background-color: #7e2de800;
+    z-index: 3;
+    border-radius: 10px;
+}
+*/
+
+#copyright {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: rgba(255, 255, 255, 0.63);
+}
+#podpis {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.63);
+}

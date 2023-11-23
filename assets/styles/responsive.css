@@ -1,0 +1,111 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 8px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    border-radius: 10px;
+    
+}
+@media(max-width:875px)   {
+    #special-row p{
+        margin-top: 0;
+    }
+    .gif {
+        width: 70%;
+    }
+    #middle-row .description {
+        transform: translatex(-20%);
+    }
+    #middle-row img {
+        justify-content: center;
+        transform: translatex(-20%);
+        width: 65%;
+    }
+}
+
+@media(max-width:730px) {
+    #header-right-section {
+        position: absolute;
+        flex-direction: column;  
+        right: -3px;   
+        bottom: 300px;   
+        border: black  2px solid;
+        background-color: #7E2DE8;
+        border-radius: 40px;
+        transition: all 0.6s;
+        opacity: 0;
+        padding: 20px 5px;
+    }
+    #header-right-section div {
+        margin: 15px 0;
+    }
+    #header-right-section.active {
+        right: -3px;   
+        bottom: -250px;
+        opacity: 1;
+    }
+    
+    #header-right-section img:hover {
+        filter: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(19px);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-19px);
+    }
+}
+
+@media(max-width:745px) {
+    .row-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 10px;
+        height: auto;
+    }
+    .row-container p{
+        font-size: 50px;
+    }
+    .row-container .description{
+        width: 80%;
+    }
+    .row-container span{
+        font-size: 24px;
+    }
+    .gif {
+        width: 90%
+    }
+        .row-container img {
+        width: 100%;
+    }
+
+
+
+    #middle-row .description {
+        transform: translatex(0);
+    }
+    #middle-row img {
+        transform: translatex(0);
+        width: 100%;
+    }
+    #special-row p{
+        font-size: 37px;
+    }
+}
